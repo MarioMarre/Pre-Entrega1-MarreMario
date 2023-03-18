@@ -19,4 +19,13 @@
     display: flex;
     text-align: center;
 }
-
+.details{
+  display: block;
+  font-size: 0.8rem;
+  text-decoration: none;
+  
+}
+.card{
+  background-color: rgba(214, 211, 211);
+  
+}
