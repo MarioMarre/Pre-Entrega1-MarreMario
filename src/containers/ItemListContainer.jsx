@@ -24,7 +24,8 @@ export const ItemListContainer = ()=>{
     const [error, setError] = useState([]);
     //const {name} = useParams;
     const URL = "https://fakestoreapi.com/products"
-    //const URL = "./products.json" //QUIERO USAR ESTE JSON PERO NO ME LO MUESTRA.
+    
+    //const URL = "./products.json" //QUIERO USAR ESTE JSON PERO NO SE COMO MOSTRARLO.
     useEffect(()=>{
             const getProducts = async () => {
                 try {
@@ -35,6 +36,7 @@ export const ItemListContainer = ()=>{
                     setError(true)
                 }
             } 
+            
             getProducts()
         }, [])
         const onAdd = (count) => {

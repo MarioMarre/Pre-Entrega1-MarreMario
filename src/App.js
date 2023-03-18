@@ -27,7 +27,7 @@ const App = () => {
         element={<ItemDetailContainer greeting = {greeting}/>} 
       /> */}
     
-      {/* <Route path="/cart" element={<Cart/>}/> */}
+      {/* <Route path="/nmo/cart" element={<Cart/>}/> */}
 
     </Routes>
       
