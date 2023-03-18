@@ -1,22 +1,42 @@
 import React from "react";
 import NMOsinfondo from "../../assets/NMOsinfondo.png"
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import "./NavBar.css"
+import "./NavBar.css"; 
+import NavCategories from "./NavCategories";
+import { Link } from "react-router-dom";
+//import { CartWidget } from "./CartWidget";
 
-const  Header = () => {
-    return(
+const NavBar = ({children}) => {
+
+    return (
+        <header className="header">
+            <Link to={"/"}>
+                <img className= "logo" src={NMOsinfondo} alt="Logo" />
+            </Link>
+            <NavCategories className="navBar"/>
+            {children}
+            <h1></h1>
+        </header>
+      );
+
+   /*  const categorias = [
+        {id:0, name: "Home"},
+        {id:1, name: "Productos"},
+        {id:2, name: "Contacto"},
+    ]; */
+    
+   /*  return(
         <div className="header">
             <img className= "logo" src={NMOsinfondo} alt="Logo" />
             <nav className="navBar">
-                <ul>
-                    <li> <a href="">Home</a></li>
-                    <li> <a href="">Productos</a></li>
-                    <li> <a href="">Contacto</a></li>
-                </ul>
-                <a href=""><ShoppingCartIcon fontSize="medium"/></a>
-            </nav>
-            
+                { 
+                    categorias.map((cat)=>{
+                    return <li key={cat.id}><a  href="">{cat.name}</a></li>
+                    })
+                }
+                {children}
+            </nav> 
         </div>
-    )}
+    ) */}
 
-export default Header
+export default NavBar
+
