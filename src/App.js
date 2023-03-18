@@ -15,7 +15,6 @@ const App = () => {
         <CartWidget numcart={num}/>
       </NavBar>
      
-     {/* <ItemListContainer greeting = "Bienvenido/a a la tienda NO ME OLVIDES"/> */}
     <Routes>
       <Route path="/" element={<ItemListContainer greeting = {greeting}/>}/>
       

@@ -19,7 +19,7 @@ const tarjetaProd = new Promise((resolve, reject) => {
     },2000)
    
 }) 
-export const ItemListContainer = ()=>{
+export const ItemListContainer = ({greeting})=>{
     const [products, setProducts] = useState([]);
     const [error, setError] = useState([]);
     //const {name} = useParams;
@@ -27,7 +27,7 @@ export const ItemListContainer = ()=>{
     
     //const URL = "./products.json" //QUIERO USAR ESTE JSON PERO NO SE COMO MOSTRARLO.
     useEffect(()=>{
-            const getProducts = async () => {
+             const getProducts = async () => {
                 try {
                     const res = await fetch(URL)
                     const data = await res.json()
@@ -42,9 +42,9 @@ export const ItemListContainer = ()=>{
         const onAdd = (count) => {
             setTimeout(() => {
                 console.log("El usuario selecionó ",{count},".");
-            }, 2000);
+            }, 2000); 
         } 
-     return(
+    return(
         <>
             {products.length ? (
                 <>
@@ -55,5 +55,5 @@ export const ItemListContainer = ()=>{
                 )
             }
         </>
-    )
+    ) 
 }
