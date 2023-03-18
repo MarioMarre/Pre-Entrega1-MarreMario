@@ -35,7 +35,7 @@ export const ItemListContainer = ()=>{
                 } catch {
                     setError(true)
                 }
-            } 
+            }  
             
             getProducts()
         }, [])
@@ -44,7 +44,7 @@ export const ItemListContainer = ()=>{
                 console.log("El usuario selecionó ",{count},".");
             }, 2000);
         } 
-    return(
+     return(
         <>
             {products.length ? (
                 <>
