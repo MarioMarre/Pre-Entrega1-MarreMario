@@ -4,6 +4,7 @@ import {CartWidget} from "./componentes/header/CartWidget";
 import { ItemListContainer } from "./containers/ItemListContainer";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import ItemDetailContainer from "./containers/ItemDetailContainer";
+import Cart from "./containers/Cart";
 
 const App = () => {
   const num = 5
@@ -26,10 +27,9 @@ const App = () => {
            element={<ItemDetailContainer/>} 
           /> 
     
-          {/* <Route path="/nmo/cart" element={<Cart/>}/> */}
+          <Route path="/nmo/cart" element={<Cart/>}/>
 
         </Routes>
-      
       </BrowserRouter>
      
     </>
