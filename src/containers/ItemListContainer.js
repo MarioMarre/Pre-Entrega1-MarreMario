@@ -2,6 +2,7 @@ import React, { useEffect, useState }from "react";
 import { useParams } from "react-router-dom";
 //import ItemCount from "../componentes/ItemCount";
 import ItemList from "./ItemList";
+import ItemDetailContainer from "./ItemDetailContainer";
 import "./Style.css"
 
 

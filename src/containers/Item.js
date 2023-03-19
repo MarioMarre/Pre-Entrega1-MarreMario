@@ -1,8 +1,9 @@
-import { BottomNavigation, CardContent } from "@mui/material";
+import { CardContent } from "@mui/material";
 import React from "react";
-import ItemCount from "../componentes/ItemCount";
+import ItemCount from "./ItemCount";
 import "./Style.css"
 import { Link } from "react-router-dom";
+import ItemDetailContainer from "./ItemDetailContainer";
 
 const Item = ({product}) => {
            const onAdd = (count) => {
@@ -18,7 +19,6 @@ const Item = ({product}) => {
             <CardContent className="card">
                 <p>${product.price}</p>
                 <ItemCount stock = {10} onAdd={onAdd}/>
-                
                 <Link className="details" to="/nmo/detalles">VER DETALLES</Link>
             </CardContent>
         </div>

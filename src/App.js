@@ -3,35 +3,36 @@ import NavBar from "./componentes/header/NavBar"
 import {CartWidget} from "./componentes/header/CartWidget";
 import { ItemListContainer } from "./containers/ItemListContainer";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-//import { States } from "./States";
+import ItemDetailContainer from "./containers/ItemDetailContainer";
 
 const App = () => {
   const num = 5
   const greeting = "Bienvenido/a a la tienda NO ME OLVIDES"
   return (
-    
-    <BrowserRouter>
-      <NavBar>
-        <CartWidget numcart={num}/>
-      </NavBar>
+    <>
+      <BrowserRouter>
+        <NavBar>
+          <CartWidget numcart={num}/>
+        </NavBar>
      
-    <Routes>
-      <Route path="/" element={<ItemListContainer greeting = {greeting}/>}/>
+        <Routes>
+          <Route path="/" element={<ItemListContainer greeting = {greeting}/>}/>
       
-      <Route path="/nmo/:name"
-        element={<ItemListContainer greeting = {greeting}/>}
-      />
+          <Route path="/nmo/:name"
+            element={<ItemListContainer greeting = {greeting}></ItemListContainer>}
+          />
       
-      {/* <Route path="product/:id"
-        element={<ItemDetailContainer greeting = {greeting}/>} 
-      /> */}
+          <Route path="products/:id"
+           element={<ItemDetailContainer/>} 
+          /> 
     
-      {/* <Route path="/nmo/cart" element={<Cart/>}/> */}
+          {/* <Route path="/nmo/cart" element={<Cart/>}/> */}
 
-    </Routes>
+        </Routes>
       
-    </BrowserRouter>
-   
+      </BrowserRouter>
+     
+    </>
   )
 };
 
