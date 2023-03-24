@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 //import ItemCount from "../componentes/ItemCount";
 import ItemList from "./ItemList";
 import ItemDetailContainer from "./ItemDetailContainer";
-import "./Style.css"
+import "./Style.css";
 
 
 const productosNMO = 
@@ -27,7 +27,7 @@ export const ItemListContainer = ({greeting})=>{
     const URL = "https://fakestoreapi.com/products"
     
     //const URL = "./products.json" //QUIERO USAR ESTE JSON PERO NO SE COMO MOSTRARLO.
-    useEffect(()=>{
+     useEffect(()=>{
              const getProducts = async () => {
                 try {
                     const res = await fetch(URL)
@@ -39,7 +39,8 @@ export const ItemListContainer = ({greeting})=>{
             }  
             
             getProducts()
-        }, [])
+        }, []) 
+        
         const onAdd = (count) => {
             setTimeout(() => {
                 console.log("El usuario selecionó ",{count},".");

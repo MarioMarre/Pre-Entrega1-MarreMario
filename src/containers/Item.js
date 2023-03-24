@@ -3,7 +3,7 @@ import React from "react";
 import ItemCount from "./ItemCount";
 import "./Style.css"
 import { Link } from "react-router-dom";
-import ItemDetailContainer from "./ItemDetailContainer";
+
 
 const Item = ({product}) => {
            const onAdd = (count) => {

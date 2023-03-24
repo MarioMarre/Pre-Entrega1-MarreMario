@@ -9,6 +9,7 @@ import Cart from "./containers/Cart";
 const App = () => {
   const num = 5
   const greeting = "Bienvenido/a a la tienda NO ME OLVIDES"
+  
   return (
     <>
       <BrowserRouter>
@@ -30,6 +31,7 @@ const App = () => {
           <Route path="/nmo/cart" element={<Cart/>}/>
 
         </Routes>
+        <ItemDetailContainer/>
       </BrowserRouter>
      
     </>

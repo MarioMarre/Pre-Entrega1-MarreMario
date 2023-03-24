@@ -5,7 +5,7 @@ export const ItemDetail = (product) =>{
         <article className="detalles">
           <img src={product.image} alt="img producto"  />
           <div className="info">
-            <h2 className="name">{product.tittle}</h2>
+            <h2 className="name">{product.title}</h2>
             <p className="description">Descripcion del producto:{product.description}</p>
             <ul>
               <li>Precio:</li>
