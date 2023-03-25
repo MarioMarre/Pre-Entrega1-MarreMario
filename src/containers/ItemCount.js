@@ -1,5 +1,6 @@
 import React, {useState} from "react";
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+
 
 const ItemCount = ({ onAdd, stock }) => {
   const [count, setCount] = useState(1);
@@ -22,7 +23,7 @@ const ItemCount = ({ onAdd, stock }) => {
         <p className="uni" style={{fontSize:'1rem'}}>{count}</p>
         <button className="btn" onClick={handlerAdd}>+</button>
       </div>
-      <button className="carrito" onClick={handlerSelect}><ShoppingCartIcon fontSize="small"/></button>
+      <button className="carrito" onClick={handlerSelect}><AddShoppingCartIcon fontSize="small"/></button>
     </>
   );
 };

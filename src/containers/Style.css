@@ -4,7 +4,7 @@
     box-sizing: border-box;
   }
 
-.carrito{
+/* .carrito{
     width: 100px;
     margin-top:2%;
   }
@@ -26,6 +26,60 @@
   
 }
 .card{
-  background-color: rgba(214, 211, 211);
+display: flex;
+} */
+
+/*ITEM DETAIL*/
+.detalles{
+  display: block;
+  font-size: 0.8rem;
+  text-decoration: none;
+  width: 300px;
+  height: 200px;
+}
+.detalles .img{
+  width:150px;
+  margin-top: 50px;
+}
+.detalles .info{
+  background-color: rgb(248, 248, 248);
+}
+/*ITEM*/
+.card {
+  margin: 5px;
+  padding: 5px;
+}
+.card .cardA {
+  height: 450px;
+  width: 350px;
+}
+.card .cardA .cardmed{
+  height: 300px;
+  width: 240px;
+}
+.card .cardAc .contador {
+  display: flex;
+}
+.card .cardAc .verDetalles{
+  display: block;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+/*ITEM COUNT*/
+.botones{
+  display: flex;
+  text-align: center;
+}
+.botones .btn{
+  width: 20px;
+}
+.botones .uni{
+  width: 60px;
+  text-align: center;
+}
+.carrito{
+  width: 50px;
+  margin-top:2%;
   
 }
+

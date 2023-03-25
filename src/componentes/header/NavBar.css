@@ -27,4 +27,7 @@
 .header .navBar a {
   color: black;
 }  
-
+.header .navBar li a:hover {
+  text-decoration: none;
+  color: #da9af8;
+} 
