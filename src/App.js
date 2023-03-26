@@ -31,7 +31,7 @@ const App = () => {
           <Route path="/nmo/cart" element={<Cart/>}/>
 
         </Routes>
-        
+        <ItemDetailContainer/>
       </BrowserRouter>
      
     </>

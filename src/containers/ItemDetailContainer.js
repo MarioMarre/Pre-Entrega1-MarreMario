@@ -10,7 +10,7 @@ const ItemDetailContainer = ( ) => {
 
     const getProduct = async () => {
       try {
-        const res = await fetch(`https://fakestoreapi.com/products/1`);
+        const res = await fetch(`https://fakestoreapi.com/products/2`);
         const data = await res.json();
         setProduct(data);
       } finally {
